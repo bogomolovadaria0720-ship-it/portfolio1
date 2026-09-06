@@ -1,0 +1,3419 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Дарья Богомолова — Ассистент маркетолога / PR-менеджера</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+
+    --bg: #f5f1eb;
+
+    --paper: #fbf9f5;
+
+    --dark: #242321;
+
+    --muted: #77716a;
+
+    --line: #d9d1c7;
+
+    --soft: #e9e1d8;
+
+    --pink: #ead8d5;
+
+    --green: #dce4d8;
+
+    --yellow: #eee4c9;
+
+}
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background: var(--bg);
+
+    color: var(--dark);
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    line-height: 1.5;
+
+}
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+button {
+
+    font-family: inherit;
+
+}
+
+.container {
+
+    width: min(1380px, calc(100% - 70px));
+
+    margin: 0 auto;
+
+}
+
+/* =========================
+
+   NAVIGATION
+
+========================= */
+
+.topbar {
+
+    position: fixed;
+
+    top: 18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: min(1380px, calc(100% - 50px));
+
+    z-index: 100;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 14px 20px;
+
+    background: rgba(251,249,245,.88);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(36,35,33,.1);
+
+    border-radius: 50px;
+
+}
+
+.logo {
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: -.02em;
+
+}
+
+.nav {
+
+    display: flex;
+
+    gap: 24px;
+
+}
+
+.nav a {
+
+    font-size: 12px;
+
+    color: var(--muted);
+
+    transition: .25s;
+
+}
+
+.nav a:hover {
+
+    color: var(--dark);
+
+}
+
+/* =========================
+
+   GENERAL
+
+========================= */
+
+.section {
+
+    padding: 150px 0;
+
+    position: relative;
+
+}
+
+.section-label {
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .22em;
+
+    color: #918980;
+
+    margin-bottom: 18px;
+
+}
+
+.section-title {
+
+    font-size: clamp(42px, 5vw, 76px);
+
+    line-height: .96;
+
+    letter-spacing: -.055em;
+
+    max-width: 800px;
+
+}
+
+.section-intro {
+
+    margin-top: 25px;
+
+    max-width: 650px;
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+}
+
+.divider {
+
+    width: 100%;
+
+    height: 1px;
+
+    background: var(--line);
+
+    margin: 70px 0;
+
+}
+
+/* =========================
+
+   HERO
+
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    padding: 120px 0 70px;
+
+    display: grid;
+
+    grid-template-columns: 48% 52%;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+.hero-photo {
+
+    position: relative;
+
+    min-height: 700px;
+
+    background: var(--soft);
+
+    border-radius: 0 100px 25px 25px;
+
+    overflow: hidden;
+
+}
+
+.hero-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 700px;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+}
+
+.photo-label {
+
+    position: absolute;
+
+    bottom: 24px;
+
+    left: 24px;
+
+    background: rgba(251,249,245,.94);
+
+    padding: 12px 18px;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+}
+
+.hero-content {
+
+    padding-right: 5%;
+
+}
+
+.eyebrow {
+
+    font-size: 12px;
+
+    letter-spacing: .25em;
+
+    color: #918980;
+
+    text-transform: uppercase;
+
+    margin-bottom: 35px;
+
+}
+
+.hero h1 {
+
+    font-size: clamp(65px, 8vw, 125px);
+
+    line-height: .83;
+
+    letter-spacing: -.075em;
+
+    margin-bottom: 42px;
+
+}
+
+.position {
+
+    font-size: clamp(25px, 3vw, 42px);
+
+    letter-spacing: -.04em;
+
+    margin-bottom: 25px;
+
+}
+
+.hero-line {
+
+    height: 1px;
+
+    width: 100%;
+
+    background: var(--line);
+
+    margin-bottom: 27px;
+
+}
+
+.hero-description {
+
+    max-width: 610px;
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+}
+
+.socials {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin: 35px 0;
+
+}
+
+.social {
+
+    width: 52px;
+
+    height: 52px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .3s;
+
+    background: var(--paper);
+
+}
+
+.social:hover {
+
+    transform: translateY(-4px);
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+.social svg {
+
+    width: 20px;
+
+    height: 20px;
+
+}
+
+.hh {
+
+    font-weight: 700;
+
+    font-size: 16px;
+
+    color: #d63c3c;
+
+}
+
+.primary-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 8px 9px 8px 25px;
+
+    background: var(--dark);
+
+    color: white;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    transition: .3s;
+
+}
+
+.primary-button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+.primary-button span {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #4a4845;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+/* =========================
+
+   ABOUT
+
+========================= */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.4fr;
+
+    gap: 100px;
+
+    align-items: start;
+
+}
+
+.about-text {
+
+    font-size: clamp(25px, 3vw, 43px);
+
+    line-height: 1.13;
+
+    letter-spacing: -.04em;
+
+}
+
+.about-text em {
+
+    font-family: "Playfair Display", serif;
+
+    font-weight: 500;
+
+}
+
+.about-side {
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    max-width: 550px;
+
+}
+
+.about-side p + p {
+
+    margin-top: 22px;
+
+}
+
+.about-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 35px;
+
+}
+
+.tag {
+
+    border: 1px solid var(--line);
+
+    padding: 9px 15px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+}
+
+/* =========================
+
+   SKILLS
+
+========================= */
+
+.skill-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 65px;
+
+}
+
+.skill-card {
+
+    min-height: 330px;
+
+    padding: 32px;
+
+    border-radius: 28px;
+
+    border: 1px solid var(--line);
+
+    background: var(--paper);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transition: .35s;
+
+}
+
+.skill-card:hover {
+
+    transform: translateY(-7px) rotate(-.4deg);
+
+}
+
+.skill-card:nth-child(2) {
+
+    background: var(--pink);
+
+}
+
+.skill-card:nth-child(3) {
+
+    background: var(--green);
+
+}
+
+.skill-number {
+
+    font-size: 11px;
+
+    letter-spacing: .18em;
+
+    color: var(--muted);
+
+}
+
+.skill-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 25px;
+
+}
+
+.skill-card h3 {
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    letter-spacing: -.04em;
+
+    max-width: 250px;
+
+}
+
+.skill-list {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+}
+
+.skill-list span {
+
+    background: rgba(255,255,255,.55);
+
+    border-radius: 20px;
+
+    padding: 7px 10px;
+
+    font-size: 11px;
+
+}
+
+/* TOOLS */
+
+.tools-title {
+
+    margin-top: 90px;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .2em;
+
+    color: var(--muted);
+
+}
+
+.tools-grid {
+
+    margin-top: 25px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+}
+
+.tool {
+
+    background: var(--paper);
+
+    border: 1px solid var(--line);
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 15px;
+
+    transition: .25s;
+
+}
+
+.tool:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.tool-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 12px;
+
+    background: var(--soft);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+}
+
+/* =========================
+
+   EXPERIENCE
+
+========================= */
+
+.experience-card {
+
+    margin-top: 60px;
+
+    background: var(--paper);
+
+    border: 1px solid var(--line);
+
+    border-radius: 35px;
+
+    padding: 50px;
+
+}
+
+.experience-head {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-bottom: 1px solid var(--line);
+
+    padding-bottom: 35px;
+
+}
+
+.company {
+
+    font-size: clamp(45px, 6vw, 85px);
+
+    line-height: .9;
+
+    letter-spacing: -.06em;
+
+}
+
+.role {
+
+    margin-top: 15px;
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+}
+
+.period {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+}
+
+.experience-columns {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 35px;
+
+    margin-top: 45px;
+
+}
+
+.experience-column {
+
+    padding-right: 20px;
+
+}
+
+.experience-column h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 22px;
+
+    letter-spacing: -.03em;
+
+}
+
+.experience-column ul {
+
+    list-style: none;
+
+}
+
+.experience-column li {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 14px;
+
+    padding-left: 17px;
+
+    position: relative;
+
+}
+
+.experience-column li:before {
+
+    content: "";
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: var(--dark);
+
+    position: absolute;
+
+    left: 0;
+
+    top: 9px;
+
+}
+
+/* =========================
+
+   CASE STUDY
+
+========================= */
+
+.case-intro {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 65px;
+
+}
+
+.case-title {
+
+    font-size: clamp(50px, 7vw, 100px);
+
+    line-height: .86;
+
+    letter-spacing: -.07em;
+
+}
+
+.case-context {
+
+    color: var(--muted);
+
+    max-width: 500px;
+
+}
+
+.case-context strong {
+
+    color: var(--dark);
+
+}
+
+.case-grid {
+
+    columns: 2 400px;
+
+    column-gap: 20px;
+
+}
+
+.case-item {
+
+    break-inside: avoid;
+
+    margin-bottom: 20px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--line);
+
+    background: var(--paper);
+
+}
+
+.case-visual {
+
+    min-height: 310px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    position: relative;
+
+}
+
+.case-visual.canvas {
+
+    background: var(--yellow);
+
+}
+
+.case-visual.cjm {
+
+    background: var(--green);
+
+    min-height: 430px;
+
+}
+
+.case-visual.avatar {
+
+    background: var(--pink);
+
+}
+
+.case-visual.email {
+
+    background: #e5e1dc;
+
+    min-height: 390px;
+
+}
+
+.case-visual.print {
+
+    background: #ddd8d0;
+
+    min-height: 480px;
+
+}
+
+.case-visual.outdoor {
+
+    background: #d8d7d0;
+
+    min-height: 360px;
+
+}
+
+.visual-label {
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .18em;
+
+    color: var(--muted);
+
+}
+
+.fake-design {
+
+    margin: auto;
+
+    width: 82%;
+
+    height: 62%;
+
+    background: var(--paper);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.fake-line {
+
+    height: 7px;
+
+    background: var(--dark);
+
+    border-radius: 10px;
+
+    width: 70%;
+
+    margin-bottom: 12px;
+
+}
+
+.fake-line.small {
+
+    width: 45%;
+
+    opacity: .4;
+
+}
+
+.fake-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+}
+
+.fake-box {
+
+    height: 50px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 7px;
+
+}
+
+.case-caption {
+
+    padding: 20px 24px 25px;
+
+}
+
+.case-caption h3 {
+
+    font-size: 21px;
+
+    letter-spacing: -.03em;
+
+}
+
+.case-caption p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-top: 6px;
+
+}
+
+.case-more {
+
+    margin-top: 60px;
+
+    padding: 45px;
+
+    background: var(--dark);
+
+    color: white;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+.case-more p {
+
+    color: #bdb8b1;
+
+    max-width: 600px;
+
+}
+
+.light-button {
+
+    background: white;
+
+    color: var(--dark);
+
+    padding: 15px 22px;
+
+    border-radius: 30px;
+
+    white-space: nowrap;
+
+    font-size: 13px;
+
+}
+
+/* =========================
+
+   FESTIVALS
+
+========================= */
+
+.festival {
+
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns: 1.15fr .85fr;
+
+    gap: 45px;
+
+    align-items: stretch;
+
+}
+
+.festival:nth-child(odd) {
+
+    direction: rtl;
+
+}
+
+.festival:nth-child(odd) > * {
+
+    direction: ltr;
+
+}
+
+.festival-photo {
+
+    min-height: 520px;
+
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    background: var(--soft);
+
+    position: relative;
+
+}
+
+.festival-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.photo-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(135deg,#ded7ce,#eee9e2);
+
+    color: #8a8178;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .15em;
+
+}
+
+.festival-info {
+
+    padding: 35px 10px;
+
+}
+
+.festival-number {
+
+    font-size: 11px;
+
+    color: var(--muted);
+
+    letter-spacing: .2em;
+
+}
+
+.festival h3 {
+
+    font-size: clamp(35px, 4vw, 62px);
+
+    line-height: .95;
+
+    letter-spacing: -.055em;
+
+    margin: 30px 0;
+
+}
+
+.festival-role {
+
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    background: var(--pink);
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    margin-bottom: 25px;
+
+}
+
+.festival ul {
+
+    list-style: none;
+
+}
+
+.festival li {
+
+    color: var(--muted);
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    padding-left: 18px;
+
+    position: relative;
+
+}
+
+.festival li:before {
+
+    content: "↳";
+
+    position: absolute;
+
+    left: 0;
+
+}
+
+/* =========================
+
+   CONTENT / PR
+
+========================= */
+
+.content-block {
+
+    margin-top: 65px;
+
+}
+
+.content-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 25px;
+
+}
+
+.content-heading h3 {
+
+    font-size: clamp(35px, 4vw, 58px);
+
+    letter-spacing: -.05em;
+
+}
+
+.content-heading p {
+
+    color: var(--muted);
+
+    max-width: 420px;
+
+    font-size: 14px;
+
+}
+
+.masonry {
+
+    columns: 3 300px;
+
+    column-gap: 15px;
+
+}
+
+.masonry-card {
+
+    break-inside: avoid;
+
+    margin-bottom: 15px;
+
+    background: var(--paper);
+
+    border: 1px solid var(--line);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+}
+
+.masonry-image {
+
+    min-height: 270px;
+
+    background: var(--soft);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #857d74;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .12em;
+
+}
+
+.masonry-card:nth-child(2) .masonry-image {
+
+    min-height: 380px;
+
+    background: var(--pink);
+
+}
+
+.masonry-card:nth-child(3) .masonry-image {
+
+    min-height: 320px;
+
+    background: var(--green);
+
+}
+
+.masonry-card:nth-child(4) .masonry-image {
+
+    min-height: 430px;
+
+    background: var(--yellow);
+
+}
+
+.masonry-caption {
+
+    padding: 18px;
+
+}
+
+.masonry-caption h4 {
+
+    font-size: 16px;
+
+}
+
+.masonry-caption p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+}
+
+/* CAROUSEL */
+
+.carousel-wrapper {
+
+    position: relative;
+
+}
+
+.carousel {
+
+    display: flex;
+
+    gap: 15px;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    padding-bottom: 8px;
+
+}
+
+.carousel::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.carousel-card {
+
+    flex: 0 0 330px;
+
+    scroll-snap-align: start;
+
+    background: var(--paper);
+
+    border: 1px solid var(--line);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+}
+
+.carousel-image {
+
+    height: 380px;
+
+    background: var(--soft);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #857d74;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .1em;
+
+}
+
+.carousel-card:nth-child(2) .carousel-image {
+
+    background: var(--pink);
+
+}
+
+.carousel-card:nth-child(3) .carousel-image {
+
+    background: var(--green);
+
+}
+
+.carousel-card:nth-child(4) .carousel-image {
+
+    background: var(--yellow);
+
+}
+
+.carousel-caption {
+
+    padding: 20px;
+
+}
+
+.carousel-caption h4 {
+
+    font-size: 18px;
+
+}
+
+.carousel-caption p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+}
+
+.read-link {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    text-decoration: underline;
+
+}
+
+/* LAMPA */
+
+.lampa {
+
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 50px;
+
+    margin-top: 60px;
+
+    align-items: center;
+
+}
+
+.magazine {
+
+    min-height: 550px;
+
+    border-radius: 25px;
+
+    background: var(--dark);
+
+    color: white;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.magazine-name {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 75px;
+
+}
+
+.magazine-label {
+
+    font-size: 11px;
+
+    letter-spacing: .2em;
+
+}
+
+.lampa-info h3 {
+
+    font-size: 45px;
+
+    line-height: 1;
+
+    letter-spacing: -.05em;
+
+}
+
+.lampa-info p {
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    max-width: 550px;
+
+}
+
+.article-links {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+.article-link {
+
+    border: 1px solid var(--line);
+
+    padding: 11px 16px;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+
+}
+
+/* LADOGA */
+
+.media-case {
+
+    margin-top: 70px;
+
+    background: var(--green);
+
+    border-radius: 35px;
+
+    padding: 45px;
+
+}
+
+.media-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+}
+
+.media-card {
+
+    min-height: 300px;
+
+    background: var(--paper);
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+/* =========================
+
+   CONTACTS
+
+========================= */
+
+.contact-section {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.contact-box {
+
+    width: 100%;
+
+    background: var(--dark);
+
+    color: white;
+
+    border-radius: 45px;
+
+    padding: 70px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.contact-box:after {
+
+    content: "";
+
+    width: 350px;
+
+    height: 350px;
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    right: -100px;
+
+    bottom: -150px;
+
+}
+
+.contact-box .section-label {
+
+    color: #aaa49d;
+
+}
+
+.contact-title {
+
+    font-size: clamp(60px, 9vw, 140px);
+
+    line-height: .8;
+
+    letter-spacing: -.075em;
+
+    max-width: 950px;
+
+}
+
+.contact-subtitle {
+
+    margin-top: 30px;
+
+    color: #aaa49d;
+
+    max-width: 500px;
+
+}
+
+.contact-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 45px;
+
+}
+
+.contact-link {
+
+    border: 1px solid #514e4a;
+
+    border-radius: 30px;
+
+    padding: 13px 19px;
+
+    font-size: 13px;
+
+    transition: .25s;
+
+}
+
+.contact-link:hover {
+
+    background: white;
+
+    color: var(--dark);
+
+}
+
+/* =========================
+
+   FOOTER
+
+========================= */
+
+footer {
+
+    padding: 35px 0;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+/* =========================
+
+   MOBILE
+
+========================= */
+
+@media (max-width: 900px) {
+
+    .container {
+
+        width: min(100% - 30px, 700px);
+
+    }
+
+    .topbar {
+
+        width: calc(100% - 20px);
+
+    }
+
+    .nav {
+
+        display: none;
+
+    }
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        padding-top: 110px;
+
+    }
+
+    .hero-photo {
+
+        min-height: 550px;
+
+        order: 1;
+
+    }
+
+    .hero-photo img {
+
+        min-height: 550px;
+
+    }
+
+    .hero-content {
+
+        order: 2;
+
+        padding-right: 0;
+
+    }
+
+    .hero h1 {
+
+        font-size: 65px;
+
+    }
+
+    .about-grid,
+
+    .case-intro,
+
+    .festival,
+
+    .lampa {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+    .skill-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .tools-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .experience-columns {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .experience-card {
+
+        padding: 30px;
+
+    }
+
+    .experience-head {
+
+        flex-direction: column;
+
+    }
+
+    .festival:nth-child(odd) {
+
+        direction: ltr;
+
+    }
+
+    .festival-photo,
+
+    .photo-placeholder {
+
+        min-height: 400px;
+
+    }
+
+    .media-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .media-case {
+
+        padding: 25px;
+
+    }
+
+    .contact-box {
+
+        padding: 40px 25px;
+
+        border-radius: 30px;
+
+    }
+
+    .contact-title {
+
+        font-size: 65px;
+
+    }
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .section {
+
+        padding: 100px 0;
+
+    }
+
+    .hero {
+
+        padding-top: 95px;
+
+    }
+
+    .hero-photo {
+
+        min-height: 450px;
+
+        border-radius: 0 60px 20px 20px;
+
+    }
+
+    .hero-photo img {
+
+        min-height: 450px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+    .position {
+
+        font-size: 27px;
+
+    }
+
+    .tools-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .case-grid {
+
+        columns: 1;
+
+    }
+
+    .carousel-card {
+
+        flex-basis: 285px;
+
+    }
+
+    .magazine {
+
+        min-height: 420px;
+
+    }
+
+    .magazine-name {
+
+        font-size: 60px;
+
+    }
+
+}
+
+
+/* =========================================================
+   FINAL LAYOUT OVERRIDES — polished desktop + mobile
+   ========================================================= */
+
+/* Navigation: the mobile menu is NEVER visible on desktop. */
+.burger,
+.mobile-nav { display: none; }
+
+/* Global rhythm */
+.section { padding: 92px 0; }
+.section + .section { padding-top: 74px; }
+.section-title,
+.section-intro,
+.about-side,
+.experience-column,
+.festival-info,
+.case-context,
+.content-heading p { text-wrap: pretty; }
+
+/* HERO */
+.hero { min-height: 88vh; padding: 105px 0 55px; grid-template-columns: 43% 57%; gap: 58px; }
+.hero-photo { min-height: 590px; max-height: 650px; border-radius: 0 78px 24px 24px; }
+.hero-photo img { min-height: 590px; height: 100%; }
+.hero h1 { font-size: clamp(58px, 7vw, 108px); line-height: 0.92; letter-spacing: -.065em; margin-bottom: 34px; }
+.hero h1 span { display: block; white-space: nowrap; }
+.hero h1 span + span { margin-top: .08em; }
+.position { font-size: clamp(25px, 2.8vw, 39px); line-height: 1.02; margin-bottom: 22px; }
+.position-second-line { display: inline-block; margin-top: .10em; }
+
+/* ABOUT: less empty space, clearer visual hierarchy */
+#about .section-title { font-size: clamp(38px, 5vw, 68px); margin-bottom: 28px; }
+.about-grid { grid-template-columns: minmax(180px,.72fr) minmax(0,1.28fr); gap: 55px; align-items: start; }
+.about-text { font-size: clamp(24px, 2.65vw, 38px); }
+.about-side { max-width: none; font-size: 15px; padding-top: 3px; }
+.about-tags { margin-top: 24px; }
+
+/* TOOLS: no category headings and no broken JS dependency */
+.tools-title { margin-top: 60px; }
+.tools-grid { margin-top: 22px; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; align-items: stretch; }
+.tool { min-height: 150px; padding: 18px; display: block; cursor: default; transition: transform .22s, border-color .22s; }
+.tool:hover { transform: translateY(-3px); }
+.tool-inner { min-height: 44px; display: grid; grid-template-columns: 40px 1fr; align-items: center; gap: 12px; }
+.tool-icon { flex: none; }
+.tool-name { font-size: 14px; line-height: 1.2; font-weight: 600; }
+.tool-arrow { display: none !important; }
+.tool-details { display: block; border-top: 1px solid var(--line); margin-top: 14px; padding-top: 13px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+
+/* EXPERIENCE: readable columns, fewer awkward final lines */
+.experience-card { margin-top: 42px; padding: 40px; }
+.experience-columns { gap: 28px; margin-top: 36px; }
+.experience-column { padding-right: 6px; min-width: 0; }
+.experience-column h3 { font-size: 18px; margin-bottom: 17px; text-wrap: balance; }
+.experience-column li { font-size: 13px; line-height: 1.55; margin-bottom: 13px; text-wrap: pretty; }
+
+/* CASE STUDY */
+.case-intro { grid-template-columns: minmax(260px,.72fr) minmax(0,1.28fr); gap: 48px; align-items: start; margin-bottom: 45px; }
+.case-title-wrap { padding-top: 1px; }
+.case-title { font-size: clamp(52px, 6vw, 88px); line-height: .95; }
+.case-context { max-width: 720px; padding-top: 4px; font-size: 15px; line-height: 1.55; }
+.case-grid { columns: unset; display: grid; grid-template-columns: repeat(12, minmax(0,1fr)); gap: 16px; }
+.case-item { margin: 0; min-width: 0; }
+.case-item:nth-child(1) { grid-column: span 7; }
+.case-item:nth-child(2) { grid-column: span 5; }
+.case-item:nth-child(3) { grid-column: span 5; }
+.case-item:nth-child(4) { grid-column: span 3; }
+.case-item:nth-child(5) { grid-column: span 4; }
+.case-item:nth-child(6) { grid-column: span 4; }
+.case-visual { min-height: 0; height: 300px; padding: 22px; }
+.case-visual.canvas { height: 410px; }
+.case-visual.cjm { height: 410px; }
+.case-visual.avatar { height: 300px; }
+.case-visual.email { height: 235px; }
+.case-visual.print, .case-visual.outdoor { height: 235px; }
+.case-image { width: 100%; height: 100%; object-fit: contain; }
+.case-visual.email .case-image { max-width: 62%; margin: 0 auto; }
+.case-visual.print .case-image, .case-visual.outdoor .case-image { object-fit: contain; }
+.case-caption { padding: 15px 20px 18px; }
+.case-caption h3 { font-size: 18px; }
+
+/* FESTIVALS */
+.festival { margin-top: 48px; gap: 38px; }
+.festival-photo { min-height: 455px; }
+.photo-placeholder { min-height: 455px; }
+.festival-info { padding: 22px 4px; }
+.festival h3 { margin: 20px 0; }
+.festival li { font-size: 13px; line-height: 1.55; margin-bottom: 10px; text-wrap: pretty; }
+
+/* CONTENT / PR */
+.content-section-title { white-space: nowrap; font-size: clamp(40px, 5vw, 70px); }
+.content-block { margin-top: 46px; }
+.content-heading { gap: 40px; margin-bottom: 20px; align-items: end; }
+.content-heading h3 { flex: 0 0 auto; }
+.content-heading p { max-width: 720px; font-size: 14px; line-height: 1.5; }
+.carousel { gap: 14px; }
+.carousel-card { flex-basis: 315px; }
+.carousel-image { height: 330px; padding: 10px; border-bottom: 1px solid var(--line); }
+.carousel-image img { width: 100%; height: 100%; object-fit: contain; }
+.carousel-caption { padding: 18px 18px 20px; }
+.carousel-caption h4 { margin-bottom: 12px; }
+.mini-button { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; font-size: 11px; transition: .2s; }
+.mini-button:hover { background: var(--dark); color: white; border-color: var(--dark); }
+.masonry { columns: unset !important; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+.masonry-card { margin: 0; }
+.masonry-image { height: 285px; min-height: 285px !important; padding: 12px; border-bottom: 1px solid var(--line); }
+.masonry-image img { width: 100%; height: 100%; object-fit: contain; }
+.masonry-caption { padding: 16px 18px 18px; }
+.read-link { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; margin-top: 10px; text-decoration: none; font-size: 11px; }
+.read-link:hover { background: var(--dark); color: white; border-color: var(--dark); }
+
+/* LAMPA: two equal article windows */
+.lampa-stack { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 20px; }
+.lampa-card { border: 1px solid var(--line); border-radius: 22px; background: var(--paper); overflow: hidden; padding: 12px; }
+.lampa-card img { width: 100%; height: 330px; object-fit: contain; border-radius: 14px; background: var(--soft); }
+.lampa-card .mini-button { margin: 12px 4px 4px; }
+
+/* LADOGA: first visual unchanged, publication screenshots wider + shorter */
+.media-case { margin-top: 55px; padding: 38px; }
+.media-grid { grid-template-columns: .78fr 1.11fr 1.11fr; gap: 14px; }
+.media-card { min-height: 250px; padding: 16px; overflow: hidden; }
+.media-card:first-child { min-height: 300px; }
+.media-card:nth-child(2), .media-card:nth-child(3) { min-height: 215px; }
+.media-card img { width: 100%; height: 100%; object-fit: contain; }
+
+/* RECOMMENDATION */
+.recommendation-card { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(260px,.75fr); gap: 34px; align-items: start; margin-top: 34px; }
+.recommendation-image-wrap { border: 1px solid var(--line); border-radius: 22px; background: var(--paper); padding: 12px; height: 285px; overflow: hidden; }
+.recommendation-image { width: 100%; height: 100%; object-fit: contain; }
+.recommendation-copy { padding-top: 12px; }
+.recommendation-title { font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 420px; text-wrap: pretty; }
+
+/* CONTACTS */
+.contact-section { min-height: 55vh; }
+.contact-title { font-size: clamp(52px, 7vw, 100px); line-height: .88; }
+
+/* MOBILE NAV */
+@media (max-width: 900px) {
+  .topbar { width: calc(100% - 20px); padding: 12px 16px; }
+  .nav { display: none !important; }
+  .burger { display: flex; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); align-items: center; justify-content: center; flex-direction: column; gap: 4px; cursor: pointer; }
+  .burger span { display: block; width: 16px; height: 1.5px; background: var(--dark); transition: .2s; }
+  .mobile-nav { display: flex; position: absolute; left: 8px; top: calc(100% + 8px); width: min(260px, calc(100vw - 36px)); padding: 10px; flex-direction: column; gap: 2px; background: rgba(251,249,245,.97); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 15px 40px rgba(36,35,33,.10); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: .2s; }
+  .mobile-nav.is-open { opacity: 1; visibility: visible; transform: translateY(0); }
+  .mobile-nav a { padding: 11px 13px; border-radius: 12px; font-size: 13px; color: var(--dark); }
+  .mobile-nav a:hover { background: var(--soft); }
+  .hero { min-height: auto; padding: 105px 0 45px; grid-template-columns: 1fr; gap: 35px; }
+  .hero-photo { min-height: 430px; max-height: 520px; order: 1; }
+  .hero-photo img { min-height: 430px; }
+  .hero-content { order: 2; padding-right: 0; }
+  .hero h1 { font-size: clamp(54px, 15vw, 80px); }
+  .about-grid, .case-intro, .festival { grid-template-columns: 1fr; gap: 26px; }
+  .about-side { max-width: none; }
+  .tools-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .experience-columns { grid-template-columns: 1fr; }
+  .experience-card { padding: 28px; }
+  .festival:nth-child(odd) { direction: ltr; }
+  .festival-photo, .photo-placeholder { min-height: 330px; }
+  .case-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .case-item:nth-child(n) { grid-column: span 1; }
+  .case-visual, .case-visual.canvas, .case-visual.cjm, .case-visual.avatar, .case-visual.email, .case-visual.print, .case-visual.outdoor { height: 280px; }
+  .case-item:nth-child(1) { grid-column: span 2; }
+  .content-heading { align-items: start; flex-direction: column; gap: 10px; }
+  .content-heading p { max-width: 100%; }
+  .masonry, .lampa-stack { grid-template-columns: 1fr; }
+  .lampa-card img { height: 300px; }
+  .media-grid { grid-template-columns: 1fr 1fr; }
+  .media-card:first-child { grid-column: span 2; }
+  .recommendation-card { grid-template-columns: 1fr; }
+  .recommendation-image-wrap { height: 300px; }
+}
+
+@media (max-width: 500px) {
+  .container { width: calc(100% - 28px); }
+  .section { padding: 66px 0; }
+  .section + .section { padding-top: 54px; }
+  .hero { padding-top: 90px; }
+  .hero-photo { min-height: 340px; max-height: 390px; border-radius: 0 50px 18px 18px; }
+  .hero-photo img { min-height: 340px; }
+  .hero h1 { font-size: 54px; }
+  .position { font-size: 25px; }
+  .tools-grid { grid-template-columns: 1fr; }
+  .tool { min-height: 0; }
+  .case-grid { grid-template-columns: 1fr; }
+  .case-item:nth-child(1) { grid-column: span 1; }
+  .case-visual, .case-visual.canvas, .case-visual.cjm, .case-visual.avatar, .case-visual.email, .case-visual.print, .case-visual.outdoor { height: 250px; }
+  .carousel-card { flex-basis: 275px; }
+  .carousel-image { height: 300px; }
+  .masonry-image { height: 250px; min-height: 250px !important; }
+  .media-grid { grid-template-columns: 1fr; }
+  .media-card:first-child { grid-column: auto; }
+  .content-section-title { white-space: normal; }
+  .contact-title { font-size: 58px; }
+  .contact-box { padding: 34px 22px; }
+}
+
+
+/* Final precision fixes */
+html { scroll-padding-top: 105px; }
+.hero-photo, .festival-photo, .case-visual, .carousel-image, .masonry-image, .lampa-card img, .media-card, .recommendation-image-wrap { min-width: 0; }
+img { max-width: 100%; }
+@media (min-width: 901px) {
+  .hero-photo { width: 100%; max-width: 650px; justify-self: start; }
+  .hero-content { max-width: 760px; }
+}
+
+
+/* =========================================================
+   FINAL POLISH — Pinterest-inspired editorial layout
+   ========================================================= */
+
+/* Never allow malformed/duplicate navigation items to appear. */
+.topbar > a:not(.logo) { display:none !important; }
+.topbar > .nav { display:flex; }
+.burger, .mobile-nav { display:none; }
+
+/* More compact rhythm: the portfolio breathes without giant gaps. */
+.section { padding: 72px 0; }
+.section + .section { padding-top: 48px; }
+.section-label { margin-bottom: 14px; }
+
+/* HERO */
+.hero {
+  min-height: auto;
+  padding: 118px 0 58px;
+  grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr);
+  gap: 64px;
+  align-items: center;
+}
+.hero-photo {
+  width: min(100%, 545px);
+  min-height: 0;
+  height: 570px;
+  max-height: 570px;
+  border-radius: 0 72px 24px 24px;
+  justify-self: start;
+}
+.hero-photo img {
+  width:100%; height:100%; min-height:0; object-fit:cover; object-position:center top;
+}
+.hero-content { max-width: 680px; }
+.hero h1 {
+  font-size: clamp(54px, 6.4vw, 96px);
+  line-height: .96;
+  letter-spacing: -.042em;
+  margin-bottom: 30px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap: .08em;
+}
+.hero h1 span { display:block; white-space:nowrap; letter-spacing:inherit; }
+.hero h1 span + span { margin-top:0; }
+.position {
+  font-size: clamp(24px, 2.45vw, 36px);
+  line-height: 1.08;
+  letter-spacing:-.035em;
+  margin-bottom:20px;
+}
+.position-second-line { display:block; margin-top:.08em; }
+.hero-description { max-width: 560px; font-size:15px; line-height:1.55; }
+.socials { margin:28px 0; }
+
+/* ABOUT — title and copy share the same visual starting line. */
+#about .section-title {
+  font-size: clamp(42px, 5.2vw, 72px);
+  line-height:1;
+  white-space:nowrap;
+  margin:0;
+}
+.about-grid {
+  grid-template-columns: minmax(190px,.62fr) minmax(0,1.38fr);
+  gap:58px;
+  align-items:start;
+}
+.about-side { max-width: 760px; font-size:15px; line-height:1.65; }
+.about-side p { text-wrap:pretty; }
+.about-side p + p { margin-top:18px; }
+
+/* TOOLS — quiet editorial cards, no pluses, no category headings. */
+.tools-title { margin-top:42px; }
+.tools-grid {
+  margin-top:18px;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+  align-items:stretch;
+}
+.tool {
+  min-height:178px;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:var(--paper);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  cursor:default;
+  box-shadow:none;
+}
+.tool:hover { transform:translateY(-3px); border-color:#c9c0b5; }
+.tool-inner { min-height:42px; display:flex; align-items:center; gap:12px; }
+.tool-icon {
+  width:36px; height:36px; border-radius:50%; flex:0 0 36px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--soft); font-size:11px; color:var(--dark);
+}
+.tool-name { font-size:14px; line-height:1.25; font-weight:600; }
+.tool-details {
+  display:block !important;
+  border-top:1px solid var(--line);
+  margin-top:15px;
+  padding-top:13px;
+  color:var(--muted);
+  font-size:11.5px;
+  line-height:1.5;
+  text-wrap:pretty;
+}
+
+/* EXPERIENCE — prevent orphaned short lines where possible. */
+.experience-card { margin-top:34px; padding:34px; border-radius:28px; }
+.experience-head { gap:24px; align-items:flex-start; }
+.experience-head .period { white-space:nowrap; }
+.experience-columns { gap:30px; margin-top:30px; }
+.experience-column { min-width:0; }
+.experience-column h3 { text-wrap:balance; }
+.experience-column li { text-wrap:pretty; }
+
+/* CASE — Pinterest-style mosaic. */
+.case-intro {
+  grid-template-columns:minmax(190px,.58fr) minmax(0,1.42fr);
+  gap:44px;
+  margin-bottom:34px;
+  align-items:start;
+}
+.case-title-wrap { padding-top:0; }
+.case-title-inline { margin:0; line-height:1; }
+.case-context { max-width:780px; padding-top:0; }
+.case-grid { gap:14px; }
+.case-item:nth-child(1) { grid-column:span 7; }
+.case-item:nth-child(2) { grid-column:span 5; }
+.case-item:nth-child(3) { grid-column:span 5; }
+.case-item:nth-child(4) { grid-column:span 3; }
+.case-item:nth-child(5) { grid-column:span 4; }
+.case-item:nth-child(6) { grid-column:span 5; }
+.case-visual { border-radius:24px; }
+.case-visual.canvas { height:390px; }
+.case-visual.cjm { height:390px; }
+.case-visual.avatar { height:285px; }
+.case-visual.email { height:205px; }
+.case-visual.print, .case-visual.outdoor { height:205px; }
+.case-visual.email .case-image { max-width:52%; }
+.case-caption { padding:13px 17px 16px; }
+.case-caption h3 { text-wrap:balance; }
+
+/* FESTIVALS */
+.festival { margin-top:38px; gap:42px; align-items:start; }
+.festival-photo { min-height:410px; height:410px; border-radius:26px; overflow:hidden; }
+.festival-photo img { width:100%; height:100%; object-fit:cover; }
+.festival-info { padding:10px 0; }
+.festival h3 { margin:14px 0 14px; line-height:1.05; text-wrap:balance; }
+.festival-role { margin-bottom:18px; }
+.festival li { font-size:12.5px; line-height:1.58; margin-bottom:10px; text-wrap:pretty; }
+
+/* CONTENT & PR */
+.content-section-title { white-space:nowrap; font-size:clamp(42px,5.2vw,72px); }
+.content-block { margin-top:38px; }
+.content-heading { gap:34px; margin-bottom:18px; align-items:start; }
+.content-heading p { max-width:850px; font-size:14px; line-height:1.5; text-wrap:pretty; }
+.carousel { gap:14px; }
+.carousel-card { flex-basis:300px; border-radius:22px; }
+.carousel-image { height:300px; padding:9px; border:1px solid var(--line); border-radius:22px 22px 0 0; border-bottom:0; background:var(--paper); }
+.carousel-caption { border:1px solid var(--line); border-top:1px solid var(--line); border-radius:0 0 22px 22px; padding:17px 18px 18px; background:var(--paper); }
+.carousel-caption h4 { margin-bottom:11px; }
+.mini-button, .read-link, .article-link { border:1px solid var(--dark); border-radius:999px; padding:8px 14px; font-size:11px; display:inline-flex; align-items:center; }
+.mini-button:hover, .read-link:hover, .article-link:hover { background:var(--dark); color:#fff; }
+
+/* Longreads — two equal, intentionally compact windows. */
+.masonry { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.masonry-card { border:1px solid var(--line); border-radius:22px; background:var(--paper); overflow:hidden; }
+.masonry-image { height:245px; min-height:245px !important; padding:10px; border:0; }
+.masonry-caption { padding:14px 17px 17px; border-top:1px solid var(--line); }
+
+/* LAMPA — two equal landscape article windows, same baseline. */
+.lampa-stack { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:18px; }
+.lampa-card { padding:10px; border-radius:22px; background:var(--paper); }
+.lampa-card img { width:100%; height:235px; object-fit:contain; border-radius:14px; background:var(--soft); }
+.lampa-card .mini-button { margin:10px 3px 2px; }
+
+/* LADOGA — first card remains taller; publication screenshots become wider + shorter. */
+.media-case { margin-top:46px; padding:34px; border-radius:30px; }
+.media-grid { grid-template-columns:.72fr 1.14fr 1.14fr; gap:14px; margin-top:28px; align-items:stretch; }
+.media-card { min-height:230px; padding:12px; border-radius:20px; }
+.media-card:first-child { min-height:300px; }
+.media-card:nth-child(2), .media-card:nth-child(3) { min-height:175px; }
+.media-card img { width:100%; height:100%; object-fit:contain; }
+.article-links { margin-top:14px; }
+
+/* RECOMMENDATION — same compact image scale as longreads. */
+.recommendation-card { grid-template-columns:minmax(0,1fr) minmax(260px,.72fr); gap:30px; margin-top:26px; align-items:start; }
+.recommendation-image-wrap { height:245px; border-radius:22px; padding:10px; }
+.recommendation-copy { padding-top:10px; }
+.recommendation-title { max-width:420px; font-size:13px; line-height:1.5; text-wrap:pretty; }
+
+/* CONTACTS */
+.contact-section { min-height:auto; }
+.contact-title { font-size:clamp(48px,6.2vw,82px); line-height:.92; }
+
+/* MOBILE */
+@media (max-width:900px) {
+  .topbar { width:calc(100% - 20px); padding:10px 14px; }
+  .topbar > .nav { display:none !important; }
+  .burger {
+    display:flex !important; width:40px; height:40px; border:1px solid var(--line); border-radius:50%;
+    background:var(--paper); align-items:center; justify-content:center; flex-direction:column; gap:4px; cursor:pointer;
+  }
+  .burger span { display:block; width:15px; height:1.5px; background:var(--dark); }
+  .mobile-nav {
+    display:flex !important; position:absolute; left:8px; top:calc(100% + 8px); width:min(270px,calc(100vw - 34px));
+    padding:9px; flex-direction:column; gap:2px; background:rgba(251,249,245,.98); border:1px solid var(--line);
+    border-radius:20px; box-shadow:0 15px 40px rgba(36,35,33,.10); opacity:0; visibility:hidden; transform:translateY(-7px); transition:.2s;
+  }
+  .mobile-nav.is-open { opacity:1; visibility:visible; transform:translateY(0); }
+  .mobile-nav a { padding:11px 13px; border-radius:12px; font-size:13px; }
+  .mobile-nav a:hover { background:var(--soft); }
+
+  .section { padding:56px 0; }
+  .section + .section { padding-top:40px; }
+  .hero { padding:88px 0 38px; grid-template-columns:1fr; gap:28px; }
+  .hero-photo { width:100%; height:390px; min-height:0; max-height:none; border-radius:0 50px 18px 18px; }
+  .hero-photo img { min-height:0; }
+  .hero h1 { font-size:clamp(48px,14vw,72px); line-height:.98; letter-spacing:-.04em; gap:.06em; }
+  .position { font-size:clamp(22px,6vw,28px); }
+  .hero-description { font-size:14px; }
+
+  .about-grid { grid-template-columns:1fr; gap:18px; }
+  #about .section-title { font-size:46px; }
+  .about-side { font-size:14px; }
+
+  .tools-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .tool { min-height:0; padding:16px; }
+
+  .experience-card { padding:24px; border-radius:24px; }
+  .experience-head { flex-direction:column; gap:8px; }
+  .experience-head .period { white-space:normal; }
+  .experience-columns { grid-template-columns:1fr; gap:22px; }
+
+  .case-intro { grid-template-columns:1fr; gap:14px; }
+  .case-title { font-size:52px; }
+  .case-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .case-item:nth-child(n) { grid-column:span 1; }
+  .case-item:nth-child(1) { grid-column:span 2; }
+  .case-visual, .case-visual.canvas, .case-visual.cjm, .case-visual.avatar { height:255px; }
+  .case-visual.email, .case-visual.print, .case-visual.outdoor { height:205px; }
+
+  .festival { grid-template-columns:1fr; gap:20px; }
+  .festival-photo { height:330px; min-height:330px; }
+  .festival-info { padding:0; }
+
+  .content-section-title { white-space:nowrap; font-size:44px; }
+  .content-heading { gap:8px; }
+  .content-heading p { max-width:100%; }
+  .carousel { overflow-x:auto; padding-bottom:4px; }
+  .carousel-card { flex:0 0 min(82vw,300px); }
+  .masonry { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .masonry-image { height:220px; min-height:220px !important; }
+  .lampa-stack { grid-template-columns:1fr; }
+  .lampa-card img { height:260px; }
+  .media-grid { grid-template-columns:1fr 1fr; }
+  .media-card:first-child { grid-column:span 2; }
+  .media-card:nth-child(2), .media-card:nth-child(3) { min-height:180px; }
+  .recommendation-card { grid-template-columns:1fr; }
+  .recommendation-image-wrap { height:245px; }
+  .contact-title { font-size:56px; }
+}
+
+@media (max-width:520px) {
+  .container { width:calc(100% - 28px); }
+  .tools-grid { grid-template-columns:1fr; }
+  .case-grid, .masonry { grid-template-columns:1fr; }
+  .case-item:nth-child(n) { grid-column:span 1; }
+  .case-visual, .case-visual.canvas, .case-visual.cjm, .case-visual.avatar, .case-visual.email, .case-visual.print, .case-visual.outdoor { height:235px; }
+  .case-item:nth-child(1) .case-visual { height:300px; }
+  .masonry-image { height:220px; min-height:220px !important; }
+  .media-grid { grid-template-columns:1fr; }
+  .media-card:first-child { grid-column:auto; }
+  .media-card:first-child, .media-card:nth-child(2), .media-card:nth-child(3) { min-height:210px; }
+  .content-section-title { font-size:39px; }
+  #about .section-title { font-size:42px; }
+  .contact-title { font-size:52px; }
+}
+
+/* LAST TYPOGRAPHIC + GRID POLISH */
+@media (min-width:901px) {
+  /* Put festival images on the same visual baseline as their main titles,
+     rather than floating above the title block. */
+  .festival-photo { margin-top:42px; }
+
+  /* Side descriptions never sit above their corresponding headings. */
+  .content-heading { align-items:start; }
+  .content-heading h3 { margin:0; line-height:1; }
+  .content-heading p { margin:2px 0 0; }
+
+  /* Slightly larger longread windows for better image readability. */
+  .masonry-image { height:300px; min-height:300px !important; }
+
+  /* Recommendation uses exactly the same image window scale as longreads. */
+  .recommendation-image-wrap { height:300px; }
+  .recommendation-copy { padding-top:10px; }
+}
+
+.recommendation-link { margin-top:14px; text-transform:none; }
+
+@media (max-width:900px) {
+  .festival-photo { margin-top:0; }
+  .content-heading h3 { margin:0; }
+  .content-heading p { margin:0; }
+  .masonry-image { height:280px; min-height:280px !important; }
+  .recommendation-image-wrap { height:280px; }
+}
+
+@media (max-width:520px) {
+  .masonry-image { height:250px; min-height:250px !important; }
+  .recommendation-image-wrap { height:250px; }
+}
+
+</style>
+</head>
+<body>
+<!-- =========================
+
+     NAVIGATION
+
+========================= -->
+<nav class="topbar">
+
+    <a class="logo" href="#top">DB.</a>
+
+    <div class="nav">
+
+        <a href="#about">Обо мне</a>
+
+        <a href="#skills">Навыки</a>
+
+        <a href="#experience">Опыт</a>
+
+        <a href="#case">Case Study</a>
+
+        <a href="#festivals">Фестивали</a>
+
+        <a href="#content">Content &amp; PR</a>
+
+        <a href="#recommendation">Рекомендации</a>
+<a href="#contacts">Контакты</a>
+
+    </div>
+<button aria-label="Открыть меню" class="burger" type="button"><span></span><span></span><span></span></button><div class="mobile-nav"><a href="#about">Обо мне</a><a href="#skills">Навыки</a><a href="#experience">Опыт</a><a href="#case">Case Study</a><a href="#festivals">Фестивали</a><a href="#content">Content &amp; PR</a><a href="#recommendation">Рекомендации</a><a href="#contacts">Контакты</a></div></nav>
+<main id="top">
+<!-- =========================
+
+     01 — HERO
+
+========================= -->
+<section class="hero container">
+
+    <div class="hero-photo">
+
+        <img alt="Дарья Богомолова" src="photo1.jpg"/>
+
+        <div class="photo-label">
+
+            Marketing · Communications
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+
+            Portfolio / 2026
+
+        </div>
+
+        <h1><span>Дарья</span><span>Богомолова</span></h1>
+
+        <div class="position">Ассистент маркетолога /<br/><span class="position-second-line">PR-менеджера</span></div>
+
+        <div class="hero-line"></div>
+
+        <p class="hero-description">Развиваюсь в сфере маркетинга, PR и event. Верю, что хороший проект начинается с искреннего интереса к делу.</p>
+
+
+        <div class="socials">
+
+            <!-- Telegram -->
+
+            <a aria-label="Telegram" class="social" href="https://t.me/dariia1" rel="noopener" target="_blank">
+
+                <svg fill="none" viewbox="0 0 24 24">
+
+                    <path d="M21.5 4.5L18.3 19.6C18.1 20.7 17.5 21 16.6 20.5L11.3 16.6L8.7 19.1C8.4 19.4 8.1 19.7 7.5 19.7L7.9 14.3L17.7 5.5C18.1 5.1 17.6 4.9 17.1 5.2L5 12.8L-.2 11.2C-1.3 10.9-1.3 10.1.1 9.5L20.2 1.7C21.2 1.3 22 1.9 21.5 4.5Z" fill="currentColor"></path>
+
+                </svg>
+
+            </a>
+
+            <!-- Phone -->
+
+            <a aria-label="Телефон" class="social" href="tel:+79772650578">
+
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+
+                    <path d="M6.5 3.5l3 2.2-1.7 3.1c1 2.1 2.3 3.4 4.4 4.4l3.1-1.7 2.2 3c.4.6.3 1.4-.2 1.9l-1.5 1.5c-.5.5-1.3.7-2 .4C7.9 16.2 4.8 13.1 2.4 7.2c-.3-.7-.1-1.5.4-2l1.7-1.7c.5-.5 1.4-.4 2 .0Z"></path>
+
+                </svg>
+
+            </a>
+
+            <!-- Email -->
+
+            <a aria-label="Email" class="social" href="mailto:Bogomolova20403@yandex.ru">
+
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+
+                    <rect height="14" rx="2" width="18" x="3" y="5"></rect>
+
+                    <path d="M4 7l8 6 8-6"></path>
+
+                </svg>
+
+            </a>
+</div>
+
+
+        <a class="primary-button" href="#case">
+
+            Посмотреть проекты
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+</section>
+<!-- =========================
+
+     ОБО МНЕ
+
+========================= -->
+<section class="section container" id="about">
+
+    <div class="section-label">
+
+        01 / About me
+
+    </div>
+
+    <div class="about-grid">
+
+        <div>
+
+            <h2 class="section-title">Обо мне</h2>
+
+        </div>
+
+        <div>
+
+            <div class="about-side">
+<p>
+                    Учусь на последнем курсе СПбГЭТУ «ЛЭТИ» по направлению «Реклама и связи с общественностью», развиваюсь в маркетинге и коммуникациях. За время учёбы получила практический опыт в ПСБ и МТС, а также поработала над учебными маркетинговыми и коммуникационными проектами.
+                </p>
+<p>
+                    Мне интересно разбираться, как бренд выстраивает коммуникацию с аудиторией: исследовать её потребности, искать идеи, работать с контентом и рекламными материалами. В учебных проектах уже занималась анализом целевой аудитории и конкурентов, разработкой коммуникационных решений, медиапланированием и подготовкой материалов для разных каналов.
+                </p>
+<p>
+                    Сейчас ищу позицию ассистента маркетолога или PR-менеджера, где смогу применять полученные навыки, брать на себя задачи команды и расти в направлении маркетинга, коммуникаций и PR.
+                </p>
+<div class="about-tags">
+<span class="tag">Brand Marketing</span>
+<span class="tag">Communications</span>
+<span class="tag">PR</span>
+<span class="tag">Events</span>
+<span class="tag">Content</span>
+</div>
+</div>
+
+            </div>
+
+        </div>
+
+    
+</section>
+<!-- =========================
+
+     02 — SKILLS
+
+========================= -->
+<section class="section container" id="skills">
+
+    <div class="section-label">
+
+        02 / Skills
+
+    </div>
+
+    <h2 class="section-title">Ключевые навыки</h2>
+
+    <p class="section-intro">Работала с маркетинговыми задачами на разных этапах: анализировала аудиторию, планировала коммуникации, готовила материалы и координировала их реализацию.</p>
+
+
+    
+    <div class="skill-grid">
+<div class="skill-card">
+<div class="skill-number">01</div>
+<div>
+<div class="skill-icon">✦</div>
+<h3>Анализ и планирование</h3>
+<div class="skill-list">
+<span>Анализ ЦА и конкурентов</span><span>Сегментация</span><span>CJM</span>
+<span>SWOT</span><span>Рекламные кампании</span><span>Медиапланирование</span>
+</div>
+</div>
+</div>
+<div class="skill-card">
+<div class="skill-number">02</div>
+<div>
+<div class="skill-icon">✎</div>
+<h3>Реклама и коммуникации</h3>
+<div class="skill-list">
+<span>Рекламные концепции</span><span>Тексты</span><span>PR-коммуникации</span>
+<span>Пресс-релизы</span><span>Email</span><span>Контент</span><span>ТЗ</span>
+</div>
+</div>
+</div>
+<div class="skill-card">
+<div class="skill-number">03</div>
+<div>
+<div class="skill-icon">↗</div>
+<h3>Проектная координация</h3>
+<div class="skill-list">
+<span>Подрядчики</span><span>Коммерческие предложения</span><span>Производство материалов</span>
+<span>Сроки</span><span>Документы</span><span>Отчётность</span>
+</div>
+</div>
+</div>
+<div class="skill-card">
+<div class="skill-number">04</div>
+<div>
+<div class="skill-icon">◎</div>
+<h3>Event</h3>
+<div class="skill-list">
+<span>Площадки</span><span>Партнёры</span><span>Участники</span>
+<span>Материалы</span><span>Логистика</span><span>Сопровождение мероприятий</span>
+</div>
+</div>
+</div>
+<div class="skill-card">
+<div class="skill-number">05</div>
+<div>
+<div class="skill-icon">⌁</div>
+<h3>Аналитика</h3>
+<div class="skill-list">
+<span>Работа с данными</span><span>Маркетинговые показатели</span>
+<span>Таблицы</span><span>Отчёты</span><span>Презентации</span>
+</div>
+</div>
+</div>
+</div>
+<div class="tools-title">Tools / Инструменты</div>
+<p class="section-intro" style="margin-top:18px;max-width:760px;">
+        Использую эти инструменты для анализа данных, подготовки презентаций и маркетинговых материалов, работы с визуалом и ускорения исследовательских и контентных задач.
+    </p>
+<div class="tools-grid tools-grid-all"><div class="tool">
+<div class="tool-inner"><div class="tool-icon">G</div><div class="tool-name">Google Таблицы</div></div>
+<div class="tool-details">Рабочие таблицы, реестры, структурирование данных, базовые расчёты, фильтры, сводные таблицы и диаграммы.</div>
+</div><div class="tool">
+<div class="tool-inner"><div class="tool-icon">X</div><div class="tool-name">Excel</div></div>
+<div class="tool-details">Базовая работа с таблицами, фильтрация и сортировка данных, простые формулы, сводные таблицы, диаграммы.</div>
+</div><div class="tool">
+<div class="tool-inner"><div class="tool-icon">P</div><div class="tool-name">Google Презентации</div></div>
+<div class="tool-details">Подготовка аналитических и отчётных презентаций, структурирование информации и визуальная подача результатов.</div>
+</div><div class="tool">
+<div class="tool-inner"><div class="tool-icon">C</div><div class="tool-name">Canva</div></div>
+<div class="tool-details">Создание презентационных, рекламных и коммуникационных материалов.</div>
+</div><div class="tool">
+<div class="tool-inner"><div class="tool-icon">F</div><div class="tool-name">Figma</div></div>
+<div class="tool-details">Работа с текстом, компоновкой и оформлением визуальных материалов.</div>
+</div><div class="tool">
+<div class="tool-inner"><div class="tool-icon">Ps</div><div class="tool-name">Photoshop</div></div>
+<div class="tool-details">Базовая обработка и подготовка визуальных материалов для учебных проектов.</div>
+</div><div class="tool">
+<div class="tool-inner"><div class="tool-icon">T</div><div class="tool-name">Tilda</div></div>
+<div class="tool-details">Создание и оформление лендингов в рамках учебных проектов.</div>
+</div><div class="tool">
+<div class="tool-inner"><div class="tool-icon">AI</div><div class="tool-name">ChatGPT · Claude · Perplexity</div></div>
+<div class="tool-details">Использую для поиска и структурирования информации, анализа материалов, генерации и проверки идей, подготовки черновиков текстов и исследовательских задач.</div>
+</div></div></section>
+<!-- =========================
+
+     03 — EXPERIENCE
+
+========================= -->
+<section class="section container" id="experience">
+
+    <div class="section-label">
+
+        03 / Experience
+
+    </div>
+
+    <h2 class="section-title">
+
+        Опыт<br/>
+
+        работы
+
+    </h2>
+
+
+    <!-- PSB -->
+
+    <div class="experience-card">
+
+        <div class="experience-head">
+
+            <div>
+
+                <div class="company">ПСБ</div>
+
+                <div class="role">Младший специалист отдела маркетинга</div>
+
+            </div>
+
+            <div class="period">октябрь 2025 – апрель 2026</div>
+
+        </div>
+
+
+        <div class="experience-columns">
+<div class="experience-column">
+<h3>Мероприятия</h3>
+<ul>
+<li>Участвовала в организации 20+ клиентских мероприятий для VIP-клиентов и партнёров банка. Для четырёх проектов (до 200 участников) сопровождала полный цикл подготовки: подбирала площадки, запрашивала и анализировала КП, координировала подрядчиков, готовила раздаточные материалы и обеспечивала организационную поддержку в день проведения мероприятий.</li>
+<li>Подготовила 50+ аналитических и отчётных презентаций по итогам клиентских мероприятий, обеспечению офисов рекламными материалами и обновлению рекламных конструкций.</li>
+</ul>
+</div>
+<div class="experience-column">
+<h3>Организация и взаимодействие</h3>
+<ul>
+<li>Вела полный цикл документооборота по маркетинговым проектам: ежемесячно передавала в бухгалтерию 100+ документов, контролировала комплектность первичной документации и соблюдение внутренних сроков.</li>
+<li>Координировала организационные задачи в рамках маркетинговых проектов: формировала списки гостей, готовила рабочие таблицы и материалы, контролировала сроки выполнения задач.</li>
+</ul>
+</div>
+<div class="experience-column">
+<h3>Рекламные материалы</h3>
+<ul>
+<li>Организовала полный цикл работы с 10+ подрядчиками по производству полиграфической и рекламной продукции для сети из 22 доп. офисов банка: искала и отбирала типографии, запрашивала КП, согласовывала условия и сопровождала выполнение заказов.</li>
+<li>Координировала 3+ процесса обновления рекламных материалов для офисов банка в соответствии с маркетинговыми приоритетами: взаимодействовала с головным офисом и подрядчиками, согласовывала бюджет, контролировала сроки производства и размещения.</li>
+<li>Контролировала наличие рекламной и сувенирной продукции в доп. офисах: анализировала потребности подразделений, вела учёт материалов, инициировала пополнение запасов и координировала поставки.</li>
+</ul>
+</div>
+</div>
+</div>
+
+    
+
+
+    <!-- MTS -->
+<div class="experience-card">
+<div class="experience-head">
+<div>
+<div class="company">МТС Финтех</div>
+<div class="role">Клиентский менеджер-стажёр</div>
+</div>
+<div class="period">март 2024 – май 2024</div>
+</div>
+<div class="experience-columns">
+<div class="experience-column">
+<ul>
+<li>Взаимодействовала с клиентами и коллегами смежных подразделений по операционным вопросам.</li>
+<li>Вела рабочие реестры и помогала в подготовке документации.</li>
+</ul>
+</div>
+<div class="experience-column">
+<ul>
+<li>Вела деловую переписку в рамках рабочих процессов.</li>
+<li>Получила практический опыт административного сопровождения рабочих процессов и взаимодействия со смежными подразделениями.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================
+
+     04 — CASE STUDY
+
+========================= -->
+<section class="section container" id="case">
+
+    <div class="section-label">
+
+        04 / Case Study
+
+    </div>
+
+
+    <div class="case-intro">
+<div class="case-title-wrap"><div class="case-title case-title-inline">РОББО</div></div>
+<div class="case-context">
+
+            <p>
+
+                <strong>Учебный проект на реальном брифе компании «РОББО»</strong>
+
+            </p>
+
+            <br/>
+
+            <p>В рамках последнего учебного проекта работала над кейсом для «РОББО» – международной сети клубов робототехники для детей. Задача заказчика – повысить узнаваемость бренда среди родителей детей среднего и школьного возраста и привлечь внимание к занятиям в клубах.</p>
+<br/>
+<p>На основе анализа целевой аудитории, её потребностей и пути принятия решения разработала коммуникационную стратегию рекламной кампании и рекламные продукты для разных точек контакта с аудиторией.</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="case-grid">
+
+
+        <div class="case-item">
+
+            <div class="case-visual canvas has-image">
+<div class="visual-label">Portfolio / Lean Canvas</div>
+<img alt="Lean Canvas" class="case-image" src="Lean-canvas.png"/>
+</div>
+<div class="case-caption">
+<h3>Lean Canvas</h3>
+<p>Структурирование идеи и бизнес-модели проекта.</p>
+</div>
+
+        </div>
+
+
+        <div class="case-item">
+
+            <div class="case-visual cjm has-image">
+<div class="visual-label">Portfolio / CJM</div>
+<img alt="CJM" class="case-image" src="cjm.png"/>
+</div>
+<div class="case-caption">
+<h3>CJM</h3>
+<p>Путь клиента и ключевые точки взаимодействия.</p>
+</div>
+
+        </div>
+
+
+        <div class="case-item">
+
+            <div class="case-visual avatar has-image">
+<div class="visual-label">Portfolio / Аватар клиента</div>
+<img alt="Аватар клиента" class="case-image" src="avatar.png"/>
+</div>
+<div class="case-caption">
+<h3>Аватар клиента</h3>
+<p>Портрет целевой аудитории.</p>
+</div>
+
+        </div>
+
+
+        <div class="case-item">
+
+            <div class="case-visual email has-image">
+<div class="visual-label">Portfolio / Email</div>
+<img alt="Email" class="case-image" src="email.png"/>
+</div>
+<div class="case-caption">
+<h3>Email</h3>
+<p>Макет рекламного письма.</p>
+</div>
+
+        </div>
+
+
+        <div class="case-item">
+
+            <div class="case-visual print has-image">
+<div class="visual-label">Portfolio / Печатная реклама</div>
+<img alt="Печатная реклама" class="case-image" src="reklama.png"/>
+</div>
+<div class="case-caption">
+<h3>Печатная реклама</h3>
+<p>Разработка рекламного макета.</p>
+</div>
+
+        </div>
+
+
+        <div class="case-item">
+
+            <div class="case-visual outdoor has-image">
+<div class="visual-label">Portfolio / Наружная реклама</div>
+<img alt="Наружная реклама" class="case-image" src="narys.png"/>
+</div>
+<div class="case-caption">
+<h3>Наружная реклама</h3>
+<p>Визуальные рекламные решения.</p>
+</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="case-more">
+<div class="case-more-text">
+<h3 style="font-size:30px; margin-bottom:12px;">Подробная версия проекта</h3>
+<p>Представленные материалы – часть разработанной кампании. В работе также провела конкурентный и SWOT-анализ, определила ключевые точки контакта с аудиторией, подобрала каналы коммуникации и разработала медиаплан с метриками и бюджетом. Отдельно проработала концепцию участия в фестивале, триггерную рассылку и ТЗ для видеоконтента.</p>
+</div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<a class="light-button" href="https://miro.com/app/board/uXjVIMeBAwY=/" rel="noopener" target="_blank">Открыть в Miro →</a>
+<a class="light-button" href="https://docs.google.com/document/d/19D_8ntPKuDdbA8H5NZSiAdjQy-QPNhIQkev-k888f8w/edit?usp=sharing" rel="noopener" target="_blank">Открыть Google Документ →</a>
+</div>
+</div>
+</section>
+<!-- =========================
+
+     05 — FESTIVALS
+
+========================= -->
+<section class="section container" id="festivals">
+
+    <div class="section-label">
+
+        05 / Festivals
+
+    </div>
+
+    <h2 class="section-title">
+
+        Фестивали<br/>
+
+        и события
+
+    </h2>
+
+
+    <!-- LETI -->
+
+    <div class="festival">
+
+        <div class="festival-photo"><img alt="LETI Communication Experts Festival" src="Leti-fest.png"/></div>
+
+
+        <div class="festival-info">
+
+            <div class="festival-number">
+
+                01 / LETI
+
+            </div>
+
+            <h3>
+
+                LETI Communication
+
+                Experts Festival
+
+            </h3>
+
+            <div class="festival-role">Куратор направления выездных мастер-классов</div>
+
+            <ul><li>Сопровождала группы участников (до 20 человек) на выездные мастер-классы в компании и культурные центры Санкт-Петербурга (Design District DAA, завод «Балтика», «Петрович Тех»): организовывала сбор и сверку списков, контролировала своевременное прибытие групп без сбоев в расписании и потерь участников.</li><li>Оказывала организационную поддержку мастер-классов в вузе: проверяла техническую готовность аудиторий, встречала спикеров, вручала подарки.</li><li>Участвовала в разработке квеста для команд-участников: формулировала задания, готовила маршрутные листы и инструкции для организаторов.</li><li>В форс-мажорной ситуации (опоздание команд на старт) предложила решение — корректировку времени на точках с помощью таймеров, что позволило избежать спорных ситуаций и уложиться в график.</li><li>Готовила документацию направления (списки участников, организаторов, спикеров, маршрутные листы, чек-листы), что упрощало взаимодействие между 15 членами команды.</li></ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- OSVETI NAUKU -->
+
+    <div class="festival">
+
+        <div class="festival-photo"><img alt="Фестиваль «Освети Науку»" src="osveti.jpg"/></div>
+
+
+        <div class="festival-info">
+
+            <div class="festival-number">
+
+                02 / EVENT
+
+            </div>
+
+            <h3>
+
+                «Освети<br/>
+
+                Науку»
+
+            </h3>
+
+            <div class="festival-role">
+
+                Координатор
+
+            </div>
+
+            <ul><li>Провела двухэтапную информационную кампанию – разослала 37 писем-приглашений в вузы СЗФО и России (23 в первом сезоне, 14 во втором) и прямые контакты с 20+ медиацентрами и студенческими научными обществами. Результат – рост заявок на 50% (со 100 до 150) во втором сезоне относительно плана.</li><li>Проверила 50+ заявок по направлению «журналистика», выявляла несоответствия критериям и запрашивала недостающие данные – обеспечила точность итоговых списков для жюри.</li><li>Прямая коммуникация с участниками: обзвонила более 20 финалистов для подтверждения участия и записи на экскурсии (редакция «Российской газеты», ТАСС, Музей-квартира А. С. Попова), оперативно решала логистические вопросы на площадке.</li><li>В команде из 6 человек отвечала за встречу гостей, регистрацию, выдачу бейджей и материалов, сопровождение экскурсий.</li></ul>
+
+        </div>
+
+    </div>
+</section>
+<!-- =========================
+
+     06 — CONTENT & PR
+
+========================= -->
+<section class="section container" id="content">
+
+    <div class="section-label">
+
+        06 / Content &amp; PR
+
+    </div>
+
+    <h2 class="section-title content-section-title">Контент и PR</h2>
+
+
+    <!-- ETU MEDIA -->
+
+    <div class="content-block">
+
+        <div class="content-heading">
+
+            <h3>ETU Media</h3>
+
+            <p>Участвовала в продвижении медиацентра университета: писала тексты для постов в группу медиацентра во «ВКонтакте» (дайджесты, креативные подборки на студенческую тематику), а также лонгриды и статьи для студенческого журнала LAMPA.</p>
+
+        </div>
+
+
+        <div class="carousel">
+<div class="carousel-card">
+<div class="carousel-image"><img alt="Пост-карточки" src="kart.png"/></div>
+<div class="carousel-caption">
+<h4>Пост-карточки</h4>
+<a class="mini-button" href="https://vk.ru/wall-215518898_3133" rel="noopener" target="_blank">Смотреть публикацию</a>
+</div>
+</div>
+<div class="carousel-card">
+<div class="carousel-image"><img alt="Дайджест" src="dayjust.png"/></div>
+<div class="carousel-caption">
+<h4>Дайджест</h4>
+<a class="mini-button" href="https://vk.ru/wall-215518898_1976" rel="noopener" target="_blank">Смотреть публикацию</a>
+</div>
+</div>
+<div class="carousel-card">
+<div class="carousel-image"><img alt="Пост-карточки" src="kart2.png"/></div>
+<div class="carousel-caption">
+<h4>Пост-карточки</h4>
+<a class="mini-button" href="https://vk.ru/wall-215518898_1766" rel="noopener" target="_blank">Смотреть публикацию</a>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-top:70px;">
+
+            <div class="content-heading">
+
+                <h3>Лонгриды</h3>
+
+                <p>
+
+                    Авторские материалы
+
+                    для университетского медиа.
+
+                </p>
+
+            </div>
+
+
+            <div class="masonry" style="columns:2 420px;">
+<div class="masonry-card">
+<div class="masonry-image"><img alt="Лонгрид 01" src="long1.png"/></div>
+<div class="masonry-caption">
+<h4>Лонгрид 01</h4>
+<a class="read-link" href="https://vk.ru/wall-215518898_2446" rel="noopener" target="_blank">Читать полностью →</a>
+</div>
+</div>
+<div class="masonry-card">
+<div class="masonry-image"><img alt="Лонгрид 02" src="long2.png"/></div>
+<div class="masonry-caption">
+<h4>Лонгрид 02</h4>
+<a class="read-link" href="https://vk.ru/wall-215518898_1602" rel="noopener" target="_blank">Читать полностью →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- LAMPA -->
+
+    <div class="content-block">
+
+        <div class="content-heading">
+
+            <h3>LAMPA</h3>
+
+            <p>
+
+                Автор материалов для студенческого журнала.
+
+            </p>
+
+        </div>
+
+
+        <div class="lampa-stack">
+<div class="lampa-card">
+<img alt="Разворот LAMPA №019" src="lampa1.png"/>
+<a class="mini-button" href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2FL13g1R2rhEyzXaqxFR1Ur%2BsLgOLby3gcwivcw9414fNKQHPg2dxxkUuIxKxu8i4fq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%A1%D0%9F%D0%B1%D0%93%D0%AD%D0%A2%D0%A3_%D0%9B%D0%AD%D0%A2%D0%98_LAMPA_019.pdf&amp;name=%D0%A1%D0%9F%D0%93%D0%AD%D0%A2%D0%A3_%D0%9B%D0%AD%D0%A2%D0%98_LAMPA_019.pdf&amp;nosw=1" rel="noopener" target="_blank">Читать выпуск</a>
+</div>
+<div class="lampa-card">
+<img alt="Разворот LAMPA №020" src="lampa2.png"/>
+<a class="mini-button" href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2FL13g1R2rhEyzXaqxFR1Ur%2BsLgOLby3gcwivcw9414fNKQHPg2dxxkUuIxKxu8i4fq%2FJ6bpmRyOJonT3VoXnDag%3D%3D%3A%2F%D0%A1%D0%9F%D0%93%D0%AD%D0%A2%D0%A3_%D0%9B%D0%AD%D0%A2%D0%98_LAMPA_020.pdf&amp;name=%D0%A1%D0%9F%D0%93%D0%AD%D0%A2%D0%A3_%D0%9B%D0%AD%D0%A2%D0%98_LAMPA_020.pdf&amp;nosw=1" rel="noopener" target="_blank">Читать выпуск</a>
+</div>
+</div>
+</div>
+<!-- LADOGA -->
+
+    <div class="content-block">
+
+        <div class="media-case">
+
+            <div class="content-heading">
+
+                <h3>
+
+                    «Ладога — 2024»
+
+                </h3>
+
+                <p>
+
+                    Медиаволонтёр на молодёжном форуме.
+
+                </p>
+
+            </div>
+
+
+            <p style="max-width:650px;color:#6d766b;font-size:15px;">Написала пресс-релиз по итогам форума, который организаторы направили в рассылку СМИ; материал был опубликован в двух онлайн-изданиях Псковской области – «Псковском агентстве информации» и «Псковской ленте новостей».</p>
+
+
+            <div class="media-grid">
+<div class="media-card"><img alt="Анонс пресс-релиза" src="anons.png"/></div>
+<div class="media-card"><img alt="Псковская лента новостей" src="lenta.png"/></div>
+<div class="media-card"><img alt="Псковское агентство информации" src="lenta2.png"/></div>
+</div>
+<div class="article-links"><a class="article-link" href="https://disk.yandex.ru/edit/disk/disk%2F%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE_%D0%91%D0%BE%D0%B3%D0%BE%D0%BC%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%94%D0%B0%D1%80%D1%8C%D1%8F%2F%D0%A4%D0%BE%D1%80%D1%83%D0%BC%20%C2%AB%D0%9B%D0%B0%D0%B4%D0%BE%D0%B3%D0%B0%C2%BB%2F%D0%9F%D1%80%D0%B5%D1%81%D1%81-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7.docx?sk=y985e9a5f03119cfcd7bba54f1da1db7d" rel="noopener" target="_blank">Читать пресс-релиз →</a></div>
+
+        </div>
+
+    </div>
+</section>
+<!-- =========================
+
+     07 — CONTACTS
+
+========================= -->
+<!-- =========================
+     07 — RECOMMENDATION
+========================= -->
+<section class="section container" id="recommendation">
+<div class="section-label">07 / Recommendation</div>
+<h2 class="section-title">Рекомендации</h2>
+<div class="recommendation-card">
+<div class="recommendation-image-wrap"><img alt="Рекомендательное письмо" class="recommendation-image" src="pismo.png"/></div>
+<div class="recommendation-copy">
+<div class="recommendation-title">Рекомендательное письмо от руководителя по маркетинговым проектам ПСБ</div>
+<a class="read-link recommendation-link" href="https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2F%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE_%D0%91%D0%BE%D0%B3%D0%BE%D0%BC%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%94%D0%B0%D1%80%D1%8C%D1%8F%2F%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0%2F%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE.pdf&amp;name=%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%BE.pdf&amp;uid=418909401&amp;nosw=1" rel="noopener" target="_blank">читать письмо →</a>
+</div>
+</div>
+</section>
+<section class="section container contact-section" id="contacts">
+
+    <div class="contact-box">
+
+        <div class="section-label">
+
+            08 / Contacts
+
+        </div>
+
+        <div class="contact-title">Будем<br/>на связи</div>
+
+        <p class="contact-subtitle">Если вам откликается мой опыт и подход к работе, буду рада познакомиться и обсудить возможное сотрудничество.</p>
+
+
+        <div class="contact-links">
+
+            <a class="contact-link" href="https://t.me/dariia1" rel="noopener" target="_blank">
+
+                Telegram →
+
+            </a>
+
+            <a class="contact-link" href="tel:+79772650578">
+
+                Телефон →
+
+            </a>
+
+            <a class="contact-link" href="mailto:Bogomolova20403@yandex.ru">
+
+                Email →
+
+            </a>
+
+        </div>
+
+    </div>
+</section>
+</main>
+<footer class="container">
+
+    <div>
+
+        Дарья Богомолова · Portfolio 2026
+
+    </div>
+
+    <div>
+
+        Marketing · Communications · Events
+
+    </div>
+</footer>
+<script>
+const burger = document.querySelector('.burger');
+const mobileNav = document.querySelector('.mobile-nav');
+if (burger && mobileNav) {
+  burger.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.classList.toggle('is-open', open);
+  });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileNav.classList.remove('is-open');
+    burger.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', 'false');
+  }));
+}
+</script>
+</body>
+</html>
